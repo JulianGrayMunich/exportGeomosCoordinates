@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EASendMail" Version="7.9.0.9" />
+    <PackageReference Include="EPPlus" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="databaseAPI">
+      <HintPath>..\..\DBapi\DBapi\bin\Release\net6.0\databaseAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GNAgeneraltools">
+      <HintPath>..\..\GNAgeneraltools\GNAgeneraltools\bin\Release\net6.0\GNAgeneraltools.dll</HintPath>
+    </Reference>
+    <Reference Include="GNAspreadsheettools">
+      <HintPath>..\..\GNAspreadsheettools\GNAspreadsheettools\bin\Release\net6.0\GNAspreadsheettools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
